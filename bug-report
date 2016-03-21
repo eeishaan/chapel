@@ -26,8 +26,8 @@ CHPL_AUX_FILESYS: none
 
 3. GCC version : 4.8.4
 
-4. Bug Code[1]:
-   Bug Code[2]:
+4. Bug Code[1]: https://github.com/eeishaan/chapel/blob/master/bug.chpl
+   Bug Code[2]: https://github.com/eeishaan/chapel/blob/master/bug2.chpl
 
 5. Error reported by compiler
 Bug [1]: internal error: CAL0056. 

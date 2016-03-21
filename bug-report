@@ -31,11 +31,11 @@ CHPL_AUX_FILESYS: none
 
 5. Error reported by compiler
 Bug [1]: internal error: CAL0056. 
-It is clear that due to absence of parameter type in lambda function causes this problem.
+It is clear that the absence of parameter type in lambda function causes this problem.
 In any case the compiler should report any error instead of crashing.
 
 Bug [2]: internal error: FUN5243. 
-It seems that bundled response is not handled correctly in begin functions.
+It seems that tuple response is not supported with begin expressions.
 
 
 

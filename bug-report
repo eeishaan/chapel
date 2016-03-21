@@ -1,0 +1,41 @@
+1. Chapel Version: 1.12.0 
+
+2. Output of $CHPL_HOME/util/printchplenv
+machine info: Linux golem 4.2.0-27-generic #32~14.04.1-Ubuntu SMP Fri Jan 22 15:32:26 UTC 2016 x86_64
+CHPL_HOME: /home/ishaan/chapel/chapel-1.12.0 *
+script location: /home/ishaan/chapel/chapel-1.12.0/util
+CHPL_HOST_PLATFORM: linux64 *
+CHPL_HOST_COMPILER: gnu
+CHPL_TARGET_PLATFORM: linux64
+CHPL_TARGET_COMPILER: gnu
+CHPL_TARGET_ARCH: native
+CHPL_LOCALE_MODEL: flat
+CHPL_COMM: none *
+CHPL_TASKS: fifo *
+CHPL_LAUNCHER: none
+CHPL_TIMERS: generic
+CHPL_MEM: cstdlib
+CHPL_MAKE: make
+CHPL_ATOMICS: intrinsics
+CHPL_GMP: none *
+CHPL_HWLOC: none
+CHPL_REGEXP: none *
+CHPL_WIDE_POINTERS: struct
+CHPL_LLVM: none *
+CHPL_AUX_FILESYS: none
+
+3. GCC version : 4.8.4
+
+4. Bug Code[1]:
+   Bug Code[2]:
+
+5. Error reported by compiler
+Bug [1]: internal error: CAL0056. 
+It is clear that due to absence of parameter type in lambda function causes this problem.
+In any case the compiler should report any error instead of crashing.
+
+Bug [2]: internal error: FUN5243. 
+It seems that bundled response is not handled correctly in begin functions.
+
+
+
